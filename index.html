@@ -1,5 +1,105 @@
-<html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Online Responsive Resume Demo</title>
+  <meta name="author" content="Jake Rocheleau">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Simonetta:400,900|Balthazar">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="responsive.css">
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+  <![endif]-->
+</head>
+
 <body>
-<h1> Hey this is gauravi </h1>
+	<div id="w" itemscope itemtype="http://schema.org/Person">
+		<header class="clearfix">
+			<div id="info">			
+				<h1><span itemprop="name">Gauravi Girase</span></h1>
+				<h3><span itemprop="jobTitle">Software Developer</span></h3>
+				<small><span itemprop="email">gauravi.girase@gmail.com</span></small>
+				<small><span itemprop="phone">+91 7972982742</span></small>
+				<small><a href="www.linkedin.com/in/gauravi-girase" itemprop="url">My LinkedIn Portfolio</a></small>
+			</div>
+		</header>
+		
+		<section id="profile">
+			<h2>My Profile</h2>
+			<p itemprop="description">I am an ambitious and self-driven individual. I constantly set goals for myself, so that I have something to strive toward. 
+							  I am not comfortable in settling, I need perfection in what I do and I am always looking out for an opportunity to do better and achieve greatness.</p>
+		</section>
+		</br>
+		<section id="skills" class="clearfix" itemscope itemtype="http://schema.org/ItemList">
+			<h2 itemprop="name">Skillset</h2>
+			<section id="skills-left">
+				<h4 itemprop="about">Development</h4>
+				<ul>
+					<li itemprop="itemListElement">HTML5/CSS3</li>
+					<li itemprop="itemListElement">JavaScript</li>
+					<li itemprop="itemListElement">Java</li>
+					<li itemprop="itemListElement">MySQL Databases</li>
+					<li itemprop="itemListElement">Android</li>
+				</ul>
+			</section>
+			
+			<section id="skills-right">
+				<h4 itemprop="about">Software</h4>
+				<ul>
+					<li itemprop="itemListElement">Android Studio</li>
+					<li itemprop="itemListElement">Eclipse</li>
+					<li itemprop="itemListElement">Intellij</li>
+					<li itemprop="itemListElement">VS Code</li>
+					<li itemprop="itemListElement">Adobe Photoshop</li>
+				</ul>
+			</section>
+		</section>
+		</br>
+		<section id="education">
+			<h2>Past Education</h2>
+			<p><span itemprop="alumniOf">Cummins College Of Engineering, Pune</span> graduate of 2019.</p>
+			<p><span itemprop="alumniOf">Pirojsha Godrej Junior College, Bordi</span> graduate of 2015.</p>
+			<p><span itemprop="alumniOf">S.D.I.L.A., Dahanu</span> graduate of 2013.</p>
+		</section>
+		</br>
+		<section id="experience">
+			<h2>Work Experience - QUALITIA ~ 2.7 yrs</h2>
+			<p>Python Developer ~ July, 2019- Oct, 2019</p>
+				<pre class="tab">
+				- Worked on version control feature of excel sheet which maintained the test data using the Pandas library.
+				</pre>
+			</br><p>Java Developer ~ Nov, 2019- July, 2021</p>
+				<pre class="tab">
+				- Upgraded the complete code to make it clean, easily understandable and modifiable.
+				- Worked on socket connection using Undertow from the server-side.
+				- Wrote our custom class loader.
+				- Worked on L3 Customer issues.
+				- Wrote unit -test for 40% of the server-side code using JUnit and Mockito.
+				</pre>
+			</br><p>Technical Lead ~ July, 2021- Feb, 2022</p>
+				<pre class="tab">
+				- Leading 2 teams (Engine and Reports&Dashboard)
+				- Ideation of the feature along with other company leaders.
+				- Following all Agile practices and guiding the team to do so.
+				- Present server-side progress in Sprint Review meeting.
+				</pre>
+		</section>
+		
+		</br>
+		<section id="hobbies">
+			<h2>Hobbies</h2>
+			<ul>
+				<li itemprop="itemHobby">Sketching</li>
+				<li itemprop="itemHobby">Painting</li>
+				<li itemprop="itemHobby">Badminton</li>
+				<li itemprop="itemHobby">Mehendi</li>
+			</ul>
+		</section>
+
+	</div>
 </body>
 </html>
